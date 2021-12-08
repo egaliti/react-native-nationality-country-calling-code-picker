@@ -1,4 +1,4 @@
-import { CountryPicker as CountryPickerComponent } from "./src/screens";
+import { NationalityPicker as NationalityPickerComponent } from "./src/screens";
 import React from "react";
 
 const DEFAULT_OPTIONS = {
@@ -11,11 +11,11 @@ const DEFAULT_OPTIONS = {
   darkMode: true,
 };
 
-export default CountryPicker = (props) => {
+export default NationalityPicker = (props) => {
   const propsModel = {
     ...DEFAULT_OPTIONS,
     ...props,
   };
 
-  return <CountryPickerComponent {...propsModel} />;
+  return <NationalityPickerComponent {...propsModel} />;
 };
