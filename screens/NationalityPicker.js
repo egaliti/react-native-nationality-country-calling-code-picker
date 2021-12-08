@@ -66,8 +66,9 @@ export const NationalityPicker = (props) => {
     }
 
     if (country) {
-      const { callingCode, emoji, name, code } = country;
+      const { callingCode, emoji, name, code, nationality } = country;
       setCountryName(name);
+      setNationalityName(nationality);
       setFlag(emoji);
       setCallingCode(callingCode);
       setCode(code);

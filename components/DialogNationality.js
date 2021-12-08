@@ -12,10 +12,10 @@ import { Colors } from "../styles";
 import data from "../constants/countries.json";
 import { getStyles } from "./styles";
 
-export const DialogCountry = (props) => {
+export const DialogNationality = (props) => {
   const {
     onSelectItem,
-    title = "Country",
+    title = "Nationality",
     searchPlaceholder = "Search",
     textEmpty = "Empty data",
     setVisible,
