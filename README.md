@@ -101,22 +101,24 @@ countryPickerRef.close();
 
 ## containerStyle
 
-| Props                     | Default | Options/Info                   |
-| ------------------------- | ------- | ------------------------------ |
-| container (Object)        | style   | Style for component container. |
-| flagStyle (Object)        | style   | Style for the icon country.    |
-| callingCodeStyle (Object) | style   | Style for country code.        |
-| countryNameStyle (Object) | style   | Style for country name.        |
-| countryCodeStyle (Object) | style   | Style for country code.        |
+| Props                         | Default | Options/Info                   |
+| ----------------------------- | ------- | ------------------------------ |
+| container (Object)            | style   | Style for component container. |
+| flagStyle (Object)            | style   | Style for the icon country.    |
+| callingCodeStyle (Object)     | style   | Style for country code.        |
+| countryNameStyle (Object)     | style   | Style for country name.        |
+| nationalityNameStyle (Object) | style   | Style for nationality name.    |
+| countryCodeStyle (Object)     | style   | Style for country code.        |
 
 ## modalConfig && containerConfig
 
-| Props                     | Default | Options/Info            |
-| ------------------------- | ------- | ----------------------- |
-| showFlag (Boolean)        | true    | Show/hide Flag.         |
-| showCallingCode (Boolean) | true    | Show/hide Calling Code. |
-| showCountryName (Boolean) | true    | Show/hide Country Name. |
-| showCountryCode (Boolean) | true    | Show/hide Country Code. |
+| Props                         | Default | Options/Info                |
+| ----------------------------- | ------- | --------------------------- |
+| showFlag (Boolean)            | true    | Show/hide Flag.             |
+| showCallingCode (Boolean)     | true    | Show/hide Calling Code.     |
+| showCountryName (Boolean)     | true    | Show/hide Country Name.     |
+| showNationalityName (Boolean) | true    | Show/hide Nationality Name. |
+| showCountryCode (Boolean)     | true    | Show/hide Country Code.     |
 
 ## modalStyle
 
