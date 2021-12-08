@@ -129,13 +129,14 @@ countryPickerRef.close();
 
 ## itemStyle
 
-| Props                     | Default | Options/Info                     |
-| ------------------------- | ------- | -------------------------------- |
-| itemContainer (Object)    | style   | Style for item country container |
-| flagStyle (Object)        | style   | Style for the icon country.      |
-| callingCodeStyle (Object) | style   | Style for country code.          |
-| countryNameStyle (Object) | style   | Style for country name.          |
-| countryCodeStyle (Object) | style   | Style for country code.          |
+| Props                         | Default | Options/Info                     |
+| ----------------------------- | ------- | -------------------------------- |
+| itemContainer (Object)        | style   | Style for item country container |
+| flagStyle (Object)            | style   | Style for the icon country.      |
+| callingCodeStyle (Object)     | style   | Style for country code.          |
+| countryNameStyle (Object)     | style   | Style for country name.          |
+| nationalityNameStyle (Object) | style   | Style for nationality name.      |
+| countryCodeStyle (Object)     | style   | Style for country code.          |
 
 ### Thank you!
 
