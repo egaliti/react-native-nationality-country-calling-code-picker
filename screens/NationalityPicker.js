@@ -5,7 +5,7 @@ import { Styles, Colors } from "../styles";
 import dataCountry from "../constants/countries.json";
 import { DialogCountry } from "../components";
 
-export const CountryPicker = (props) => {
+export const NationalityPicker = (props) => {
   const [callingCode, setCallingCode] = useState("1");
   const [flag, setFlag] = useState("🇺🇸");
   const [countryName, setCountryName] = useState("United States");
@@ -24,7 +24,7 @@ export const CountryPicker = (props) => {
     darkMode = true,
     renderChildren,
 
-    countryPickerRef,
+    nationalityPickerRef,
     enable = true,
     onOpen,
     onClose,
@@ -57,7 +57,7 @@ export const CountryPicker = (props) => {
 
   useEffect(() => {
     let country = undefined;
-    countryPickerRef && countryPickerRef(countryRef);
+    nationalityPickerRef && nationalityPickerRef(nationalityRef);
 
     if (countryCode) {
       country = dataCountry.filter((item) => item.code === countryCode)[0];
@@ -74,7 +74,7 @@ export const CountryPicker = (props) => {
     }
   }, [props]);
 
-  const countryRef = {
+  const nationalityRef = {
     open: () => {
       setVisible(true);
       onOpen && onOpen();

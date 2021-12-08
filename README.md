@@ -13,17 +13,17 @@ OR
 ## Example
 
 ```javascript
-import CountryPicker from "react-native-nationality-country-calling-code-picker";
+import NationalityPicker from "react-native-nationality-country-calling-code-picker";
 
-let countryPickerRef = undefined;
+let nationalityPickerRef = undefined;
 
-// use countryPickerRef
-countryPickerRef.open();
-countryPickerRef.close();
+// use nationalityPickerRef
+nationalityPickerRef.open();
+nationalityPickerRef.close();
 
-<CountryPicker
-  countryPickerRef={(ref: any) => {
-    countryPickerRef = ref;
+<NationalityPicker
+  nationalityPickerRef={(ref: any) => {
+    nationalityPickerRef = ref;
   }}
   enable={true}
   darkMode={false}
@@ -31,13 +31,15 @@ countryPickerRef.close();
   containerConfig={{
     showFlag: true,
     showCallingCode: true,
-    showCountryName: true,
+    showCountryName: false,
+    showNationalityName: true,
     showCountryCode: true,
   }}
   modalConfig={{
     showFlag: true,
     showCallingCode: true,
-    showCountryName: true,
+    showCountryName: false,
+    showNationalityName: true,
     showCountryCode: true,
   }}
   onSelectCountry={(data: any) => {
@@ -58,6 +60,7 @@ countryPickerRef.close();
     callingCodeStyle: {},
     countryCodeStyle: {},
     countryNameStyle: {},
+    nationalityNameStyle: {},
   }}
   modalStyle={{
     container: {},
@@ -68,10 +71,11 @@ countryPickerRef.close();
       flagStyle: {},
       countryCodeStyle: {},
       countryNameStyle: {},
+      nationalityNameStyle: {},
       callingNameStyle: {},
     },
   }}
-  title={"Country"}
+  title={"Nationality"}
   searchPlaceholder={"Search"}
   showCloseButton={true}
   showModalTitle={true}

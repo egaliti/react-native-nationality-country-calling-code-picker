@@ -1,1 +1,1 @@
-export * from "./DialogCountry";
+export * from "./DialogNationality";
