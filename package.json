@@ -1,0 +1,54 @@
+{
+  "name": "react-native-nationality-country-calling-code-picker",
+  "title": "React Native Nationality Country Calling Code Picker",
+  "version": "1.0.0",
+  "description": "React native library for picking Nationality, Country, Country ISO and Calling Code including Flag emoji's",
+  "private": false,
+  "main": "index.js",
+  "files": [
+    "README.md",
+    "android",
+    "index.js",
+    "ios",
+    "react-native-nationality-country-calling-code-picker.podspec"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egaliti/react-native-nationality-country-calling-code-picker.git",
+    "baseUrl": "https://github.com/egaliti/react-native-nationality-country-calling-code-picker"
+  },
+  "keywords": [
+    "react-native",
+    "android",
+    "iOS",
+    "library",
+    "country",
+    "country-iso",
+    "nationality",
+    "picker",
+    "country-picker",
+    "nationality-picker"
+  ],
+  "author": {
+    "name": "Tibu Padmakumar",
+    "email": "tibu@egaliti.com"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react-native": "^0.41.2",
+    "react-native-windows": "0.41.0-rc.1"
+  },
+  "dependencies": {
+    "fuse.js": "^6.4.1",
+    "react-native-localize": "^1.4.2",
+    "react-native-status-bar-height": "^2.5.0"
+  },
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.63.0"
+  }
+}
