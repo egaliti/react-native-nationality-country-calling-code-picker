@@ -71,7 +71,12 @@ export const DialogNationality = (props) => {
     data.reduce(
       (acc, item) => [
         ...acc,
-        { id: item.code, name: item.name, code: item.code },
+        {
+          id: item.code,
+          name: item.name,
+          nationality: item.nationality,
+          code: item.code,
+        },
       ],
       []
     ),
@@ -86,7 +91,13 @@ export const DialogNationality = (props) => {
     setVisible(false);
   };
 
-  const renderItemTemplate = ({ name, emoji, code, callingCode }) => {
+  const renderItemTemplate = ({
+    nationality,
+    name,
+    emoji,
+    code,
+    callingCode,
+  }) => {
     return (
       <View style={[styles.item, itemContainer]}>
         {showFlag && <Text style={[styles.flag, flagStyle]}>{emoji}</Text>}
@@ -112,7 +123,7 @@ export const DialogNationality = (props) => {
               nationalityNameStyle,
             ]}
           >
-            {name}
+            {nationality}
           </Text>
         )}
         {showCallingCode && (
