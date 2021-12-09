@@ -3,7 +3,7 @@ import { View, StyleSheet, TouchableOpacity, Text, Modal } from "react-native";
 import { getCountry } from "react-native-localize";
 import { Styles, Colors } from "../styles";
 import dataCountry from "../constants/countries.json";
-import { DialogCountry } from "../components";
+import { DialogNationality } from "../components";
 
 export const NationalityPicker = (props) => {
   const [callingCode, setCallingCode] = useState("1");
@@ -160,7 +160,7 @@ export const NationalityPicker = (props) => {
         </TouchableOpacity>
       ) : null}
       <Modal visible={visible}>
-        <DialogCountry
+        <DialogNationality
           onSelectItem={(data) => {
             onSelect(data);
           }}
