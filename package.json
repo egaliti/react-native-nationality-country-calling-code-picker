@@ -1,15 +1,16 @@
 {
   "name": "react-native-nationality-country-calling-code-picker",
   "title": "React Native Nationality Country Calling Code Picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React native library for picking Nationality, Country, Country ISO and Calling Code including Flag emoji's",
   "private": false,
   "main": "index.js",
   "files": [
     "README.md",
-    "android",
+    "src",
     "index.js",
-    "ios",
+    ".babelrc",
+    "LICENSE",
     "react-native-nationality-country-calling-code-picker.podspec"
   ],
   "scripts": {
