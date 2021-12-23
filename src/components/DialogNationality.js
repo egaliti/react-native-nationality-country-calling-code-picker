@@ -36,12 +36,14 @@ export const DialogNationality = (props) => {
     showCountryName = true,
     showNationalityName = true,
     showCountryCode = true,
+    showCountryCode3 = true,
   } = modalConfig;
 
   const {
     itemContainer,
     flagStyle,
     countryCodeStyle,
+    countryCode3Style,
     countryNameStyle,
     nationalityNameStyle,
     callingNameStyle,
@@ -76,6 +78,7 @@ export const DialogNationality = (props) => {
           name: item.name,
           nationality: item.nationality,
           code: item.code,
+          code3: item.code3,
         },
       ],
       []
@@ -96,6 +99,7 @@ export const DialogNationality = (props) => {
     name,
     emoji,
     code,
+    code3,
     callingCode,
   }) => {
     return (
@@ -103,6 +107,12 @@ export const DialogNationality = (props) => {
         {showFlag && <Text style={[styles.flag, flagStyle]}>{emoji}</Text>}
         {showCountryCode && (
           <Text style={[styles.currencyName, countryCodeStyle]}>{code}</Text>
+        )}
+        {showCountryCode && (
+          <Text style={[styles.currencyName, countryCodeStyle]}>{code}</Text>
+        )}
+        {showCountryCode3 && (
+          <Text style={[styles.currencyName, countryCode3Style]}>{code3}</Text>
         )}
         {showCountryName && (
           <Text

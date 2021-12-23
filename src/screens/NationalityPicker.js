@@ -11,12 +11,14 @@ export const NationalityPicker = (props) => {
   const [countryName, setCountryName] = useState("United States");
   const [nationalityName, setNationalityName] = useState("American");
   const [code, setCode] = useState("US");
+  const [code3, setCode3] = useState("USA");
   const [visible, setVisible] = useState(false);
 
   const {
     onSelectCountry,
     onInit,
     countryCode,
+    countryCode3,
 
     containerConfig = {},
     modalConfig = {},
@@ -44,6 +46,7 @@ export const NationalityPicker = (props) => {
     flagStyle,
     callingCodeStyle,
     countryCodeStyle,
+    countryCode3Style,
     countryNameStyle,
     nationalityNameStyle,
   } = containerStyle;
@@ -53,6 +56,7 @@ export const NationalityPicker = (props) => {
     showCountryName = true,
     showNationalityName = true,
     showCountryCode = true,
+    showCountryCode3 = true,
   } = containerConfig;
 
   useEffect(() => {
@@ -66,12 +70,13 @@ export const NationalityPicker = (props) => {
     }
 
     if (country) {
-      const { callingCode, emoji, name, code, nationality } = country;
+      const { callingCode, emoji, name, code, code3, nationality } = country;
       setCountryName(name);
       setNationalityName(nationality);
       setFlag(emoji);
       setCallingCode(callingCode);
       setCode(code);
+      setCode3(code3);
     }
   }, [props]);
 
@@ -98,6 +103,7 @@ export const NationalityPicker = (props) => {
     if (!countryInfo)
       countryInfo = {
         code: "US",
+        code3: "USD",
         unicode: "U+1F1FA U+1F1F8",
         name: "United States",
         emoji: "🇺🇸",
@@ -109,13 +115,14 @@ export const NationalityPicker = (props) => {
   };
 
   const onSelect = (data) => {
-    const { callingCode, emoji, name, code, nationality } = data;
+    const { callingCode, emoji, name, code, code3, nationality } = data;
     setFlag(emoji);
     onSelectCountry && onSelectCountry(data);
     setCallingCode(callingCode ? callingCode : "1");
     setCountryName(name);
     setNationalityName(nationality);
     setCode(code);
+    setCode3(code3);
   };
 
   return (
@@ -143,6 +150,11 @@ export const NationalityPicker = (props) => {
               {showCountryCode && (
                 <Text style={[styles.txtCountryCode, countryCodeStyle]}>
                   {code}
+                </Text>
+              )}
+              {showCountryCode3 && (
+                <Text style={[styles.txtCountryCode, countryCodeStyle]}>
+                  {code3}
                 </Text>
               )}
               {showCountryName && (
